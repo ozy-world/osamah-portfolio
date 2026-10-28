@@ -21,7 +21,7 @@ Render: Static Site, build **npm install && npm run build**, publish directory *
 ## Yapı
 
 - `src/main.jsx`: Header, Hero, Skills, Profile, Projects ve Footer component'ları. SettingsProvider dil ve tema bilgisini paylaşır.
-- `src/data.js`: Türkçe ve İngilizce metinler.
+- `src/data.json`: Türkçe ve İngilizce metinler.
 - `src/style.css`: Responsive tasarım ve tema renkleri.
 
 Dil ve tema localStorage'da saklanır. Axios, GitHub API'den gerçek repository verilerini alır. İstek sırasında yükleme, boş sonuç ve hata durumları gösterilir. Başarısız istek tekrar denenebilir. GitHub API anonim isteklerde hız sınırı uygulayabilir.
@@ -45,3 +45,4 @@ Avatar GitHub profilinden alınır. Gerçek iletişim e-postası ve LinkedIn bil
 - [ ] GitHub repository bağlantısı
 - [ ] Vercel / Render canlı bağlantısı
 - [ ] Öğrencinin kaydedeceği Loom videosu
+
