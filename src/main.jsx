@@ -1,4 +1,4 @@
-import {Tasks,Quiz} from "./Examples";
+import { Tasks, Quiz } from "./Examples";
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import axios from "axios";
@@ -150,11 +150,13 @@ function Projects() {
     const controller = new AbortController();
     setStatus("loading");
     axios
-      .post("https://jsonplaceholder.typicode.com/posts", { projects: t.projectList }, { signal: controller.signal })
+      .post(
+        "https://jsonplaceholder.typicode.com/posts",
+        { projects: t.projectList },
+        { signal: controller.signal },
+      )
       .then(({ data }) => {
-        setProjects(
-          data.projects,
-        );
+        setProjects(data.projects);
         setStatus("success");
       })
       .catch((error) => {
@@ -184,7 +186,11 @@ function Projects() {
               <small>{p.language || "Code"}</small>
             </div>
             <h3>{p.name.replaceAll("-", " ")}</h3>
-            <p>{p.name === "osamah-portfolio" ? t.portfolioDescription : (p.description || t.noDescription)}</p>
+            <p>
+              {p.name === "osamah-portfolio"
+                ? t.portfolioDescription
+                : p.description || t.noDescription}
+            </p>
             <div className="tags">
               <span>{p.language || "GitHub"}</span>
               <span>{t.publicRepo}</span>
@@ -232,4 +238,12 @@ function App() {
     </SettingsProvider>
   );
 }
-createRoot(document.getElementById("root")).render(location.pathname === "/tasks" ? <Tasks/> : location.pathname === "/quiz" ? <Quiz/> : <App/>);
+createRoot(document.getElementById("root")).render(
+  location.pathname === "/tasks" ? (
+    <Tasks />
+  ) : location.pathname === "/quiz" ? (
+    <Quiz />
+  ) : (
+    <App />
+  ),
+);
