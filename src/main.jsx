@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import axios from "axios";
 import "./style.css";
-import { content } from "./data";
+import content from "./data.json";
 const Settings = createContext();
 function readSetting(key, fallback) {
   try {
@@ -186,7 +186,7 @@ function Projects() {
               <small>{p.language || "Code"}</small>
             </div>
             <h3>{p.name.replaceAll("-", " ")}</h3>
-            <p>{p.description || t.noDescription}</p>
+            <p>{p.name === "osamah-portfolio" ? t.portfolioDescription : (p.description || t.noDescription)}</p>
             <div className="tags">
               <span>{p.language || "GitHub"}</span>
               <span>{t.publicRepo}</span>

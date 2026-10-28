@@ -1,0 +1,84 @@
+{
+  "tr": {
+    "navigation": "Ana menü",
+    "dark": "KOYU MOD",
+    "light": "AÇIK MOD",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "contact": "İletişim",
+    "title": "Merhaba, ben Osamah.\nWeb geliştirmeyi öğreniyorum.",
+    "intro": "Workintech’te frontend eğitimi alıyorum. Burada üzerinde çalıştığım projeleri ve öğrendiğim teknolojileri paylaşıyorum.",
+    "seeProjects": "Projelerimi gör",
+    "skillList": [
+      {
+        "name": "JavaScript",
+        "description": "Değişkenler, fonksiyonlar ve dizi metotları ile çalışıyorum. Kullanıcı etkileşimlerini JavaScript ile yönetiyorum."
+      },
+      {
+        "name": "React",
+        "description": "Arayüzleri küçük component’lara ayırıyorum. Props, state ve Context API ile veri akışını düzenliyorum."
+      },
+      {
+        "name": "HTML & CSS",
+        "description": "Semantik HTML ve CSS kullanıyorum. Flexbox, Grid ve media query ile responsive sayfalar hazırlıyorum."
+      }
+    ],
+    "profile": "Profil",
+    "name": "Ad soyad",
+    "focus": "İlgi alanı",
+    "education": "Eğitim",
+    "about": "Hakkımda",
+    "aboutText": "Kod yazmayı öğrenirken en çok bir şeyleri deneyerek ilerliyorum. Bazen küçük bir hatayı bulmak uzun sürüyor ama çözdüğümde konu daha iyi oturuyor. Şu sıralar JavaScript ve React üzerine çalışıyorum.",
+    "projectNote": "Üzerinde çalıştığım projelerden bazıları. Kodlarına GitHub üzerinden bakabilirsiniz.",
+    "loading": "Projeler yükleniyor…",
+    "error": "Projeler yüklenemedi. Lütfen tekrar deneyin.",
+    "retry": "Tekrar dene",
+    "empty": "Henüz herkese açık bir proje bulunmuyor.",
+    "noDescription": "Projenin kaynak kodunu ve ayrıntılarını GitHub üzerinden inceleyebilirsiniz.",
+    "publicRepo": "Açık kaynak",
+    "visit": "Siteye git",
+    "footer": "Projelerime göz atmak\nistersen GitHub’dayım.",
+    "portfolioDescription": "Kendimi ve çalışmalarımı bir araya getirdiğim kişisel sitem."
+  },
+  "en": {
+    "navigation": "Main navigation",
+    "dark": "DARK MODE",
+    "light": "LIGHT MODE",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "title": "Hi, I’m Osamah.\nI’m learning web development.",
+    "intro": "I’m studying frontend development at Workintech. This is where I share my projects and the technologies I’m learning.",
+    "seeProjects": "View my projects",
+    "skillList": [
+      {
+        "name": "JavaScript",
+        "description": "I work with variables, functions and array methods. I use JavaScript to manage user interactions."
+      },
+      {
+        "name": "React",
+        "description": "I break interfaces into small components and organize data flow with props, state and Context API."
+      },
+      {
+        "name": "HTML & CSS",
+        "description": "I use semantic HTML and CSS. Flexbox, Grid and media queries help me build responsive pages."
+      }
+    ],
+    "profile": "Profile",
+    "name": "Full name",
+    "focus": "Focus",
+    "education": "Education",
+    "about": "About me",
+    "aboutText": "I learn best by trying things out. Sometimes a small bug takes a while to find, but solving it helps the idea click. Right now, I’m focusing on JavaScript and React.",
+    "projectNote": "Some projects I’ve been working on. You can find their code on GitHub.",
+    "loading": "Loading projects…",
+    "error": "Could not load projects. Please try again.",
+    "retry": "Try again",
+    "empty": "No public projects are available yet.",
+    "noDescription": "Explore the source code and project details on GitHub.",
+    "publicRepo": "Open source",
+    "visit": "View site",
+    "footer": "You can find my work\nover on GitHub.",
+    "portfolioDescription": "My personal website, with a little about me and my work."
+  }
+}
