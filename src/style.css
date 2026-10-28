@@ -448,3 +448,5 @@ footer h2 {
   background: #251c75;
   outline: 2px solid #a99aff;
 }
+
+.logo { font-size: 22px; letter-spacing: -1px; font-weight: 700; border-radius: 12px; transform: none; }

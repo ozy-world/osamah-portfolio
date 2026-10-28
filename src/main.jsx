@@ -55,7 +55,7 @@ function Header() {
       </div>
       <nav aria-label={t.navigation}>
         <a className="logo" href="#home" aria-label="Osamah Abbood">
-          o.
+          OA
         </a>
         <div>
           <a href="#skills">{t.skills}</a>
