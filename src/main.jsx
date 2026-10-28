@@ -1,3 +1,4 @@
+import {Tasks,Quiz} from "./Examples";
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import axios from "axios";
@@ -142,20 +143,17 @@ function Profile() {
 }
 function Projects() {
   const { text: t } = useContext(Settings);
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState(t.projectList);
   const [status, setStatus] = useState("loading");
   const [retry, setRetry] = useState(0);
   useEffect(() => {
     const controller = new AbortController();
     setStatus("loading");
     axios
-      .get("https://api.github.com/users/ozy-world/repos", {
-        params: { sort: "updated", per_page: 100 },
-        signal: controller.signal,
-      })
+      .post("https://jsonplaceholder.typicode.com/posts", { projects: t.projectList }, { signal: controller.signal })
       .then(({ data }) => {
         setProjects(
-          data.filter((p) => !p.fork && p.name !== "ozy-world").slice(0, 3),
+          data.projects,
         );
         setStatus("success");
       })
@@ -163,7 +161,7 @@ function Projects() {
         if (!axios.isCancel(error)) setStatus("error");
       });
     return () => controller.abort();
-  }, [retry]);
+  }, [retry, t]);
   return (
     <section id="projects" className="wrap section projects">
       <h2>{t.projects}</h2>
@@ -234,4 +232,4 @@ function App() {
     </SettingsProvider>
   );
 }
-createRoot(document.getElementById("root")).render(<App />);
+createRoot(document.getElementById("root")).render(location.pathname === "/tasks" ? <Tasks/> : location.pathname === "/quiz" ? <Quiz/> : <App/>);

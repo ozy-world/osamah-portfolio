@@ -38,7 +38,25 @@
     "publicRepo": "Açık kaynak",
     "visit": "Siteye git",
     "footer": "Projelerime göz atmak\nistersen GitHub’dayım.",
-    "portfolioDescription": "Kendimi ve çalışmalarımı bir araya getirdiğim kişisel sitem."
+    "portfolioDescription": "Kendimi ve çalışmalarımı bir araya getirdiğim kişisel sitem.",
+    "projectList": [
+      {
+        "id": "tasks",
+        "name": "Çalışma Listem",
+        "description": "Günlük çalışma görevlerini ekleyip tamamlayabildiğim küçük bir uygulama. Liste tarayıcıda saklanıyor.",
+        "language": "React",
+        "html_url": "https://github.com/ozy-world/osamah-portfolio/blob/main/src/Examples.jsx",
+        "homepage": "https://osamah-portfolio-kappa.vercel.app/tasks"
+      },
+      {
+        "id": "quiz",
+        "name": "JavaScript Testi",
+        "description": "JavaScript ve React konularını tekrar etmek için beş soruluk bir test. Sonunda doğru cevapları görebilirsiniz.",
+        "language": "React",
+        "html_url": "https://github.com/ozy-world/osamah-portfolio/blob/main/src/Examples.jsx",
+        "homepage": "https://osamah-portfolio-kappa.vercel.app/quiz"
+      }
+    ]
   },
   "en": {
     "navigation": "Main navigation",
@@ -79,6 +97,24 @@
     "publicRepo": "Open source",
     "visit": "View site",
     "footer": "You can find my work\nover on GitHub.",
-    "portfolioDescription": "My personal website, with a little about me and my work."
+    "portfolioDescription": "My personal website, with a little about me and my work.",
+    "projectList": [
+      {
+        "id": "tasks",
+        "name": "Study Tasks",
+        "description": "A small app for adding and completing study tasks. The list is saved in the browser.",
+        "language": "React",
+        "html_url": "https://github.com/ozy-world/osamah-portfolio/blob/main/src/Examples.jsx",
+        "homepage": "https://osamah-portfolio-kappa.vercel.app/tasks"
+      },
+      {
+        "id": "quiz",
+        "name": "JavaScript Quiz",
+        "description": "Five questions to review JavaScript and React, with answers and a score at the end.",
+        "language": "React",
+        "html_url": "https://github.com/ozy-world/osamah-portfolio/blob/main/src/Examples.jsx",
+        "homepage": "https://osamah-portfolio-kappa.vercel.app/quiz"
+      }
+    ]
   }
 }

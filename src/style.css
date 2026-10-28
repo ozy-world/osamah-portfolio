@@ -377,3 +377,4 @@ footer h2 {
     scroll-behavior: auto;
   }
 }
+.mini{max-width:760px;margin:60px auto;padding:28px}.mini h1{font-size:40px}.mini h2{font-size:25px}.mini button{background:#4338ca;color:white;border:0;border-radius:5px;padding:12px 18px}.mini button:disabled{opacity:.45;cursor:not-allowed}.mini label{display:block;margin:15px 0}.mini input[type=radio],.mini input[type=checkbox]{margin-right:12px;accent-color:#4338ca}.mini fieldset{border:1px solid #ccc;padding:20px;margin-bottom:20px}.mini input[type=text],.task-entry input{padding:12px;border:1px solid #aaa;border-radius:5px;flex:1;min-width:0;font:inherit}.task-entry{display:flex;gap:10px}.mini ul{list-style:none;padding:0}.mini li{display:flex;justify-content:space-between;align-items:center;gap:15px;border-bottom:1px solid #ddd;padding:8px 0}.mini li label{overflow-wrap:anywhere}.mini .actions{flex-wrap:wrap}.mini [aria-pressed=true]{background:#251c75;outline:2px solid #a99aff}
